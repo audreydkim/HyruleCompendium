@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FF516B52C06B918007F0762 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF516B42C06B918007F0762 /* AppDelegate.swift */; };
+		1FF516B72C06B918007F0762 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF516B62C06B918007F0762 /* SceneDelegate.swift */; };
+		1FF516B92C06B918007F0762 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF516B82C06B918007F0762 /* ViewController.swift */; };
+		1FF516BC2C06B918007F0762 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1FF516BB2C06B918007F0762 /* Base */; };
+		1FF516BE2C06B919007F0762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF516BD2C06B919007F0762 /* Assets.xcassets */; };
+		1FF516C12C06B919007F0762 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1FF516C02C06B919007F0762 /* Base */; };
+		1FF516CC2C06B919007F0762 /* hyrulecompendiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF516CB2C06B919007F0762 /* hyrulecompendiumTests.swift */; };
+		1FF516D62C06B919007F0762 /* hyrulecompendiumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF516D52C06B919007F0762 /* hyrulecompendiumUITests.swift */; };
+		1FF516D82C06B919007F0762 /* hyrulecompendiumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF516D72C06B919007F0762 /* hyrulecompendiumUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FF516C82C06B919007F0762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FF516A92C06B918007F0762 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FF516B02C06B918007F0762;
+			remoteInfo = hyrulecompendium;
+		};
+		1FF516D22C06B919007F0762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FF516A92C06B918007F0762 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FF516B02C06B918007F0762;
+			remoteInfo = hyrulecompendium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FF516B12C06B918007F0762 /* hyrulecompendium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyrulecompendium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF516B42C06B918007F0762 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FF516B62C06B918007F0762 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1FF516B82C06B918007F0762 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FF516BB2C06B918007F0762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FF516BD2C06B919007F0762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FF516C02C06B919007F0762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FF516C22C06B919007F0762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FF516C72C06B919007F0762 /* hyrulecompendiumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hyrulecompendiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF516CB2C06B919007F0762 /* hyrulecompendiumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyrulecompendiumTests.swift; sourceTree = "<group>"; };
+		1FF516D12C06B919007F0762 /* hyrulecompendiumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hyrulecompendiumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF516D52C06B919007F0762 /* hyrulecompendiumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyrulecompendiumUITests.swift; sourceTree = "<group>"; };
+		1FF516D72C06B919007F0762 /* hyrulecompendiumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyrulecompendiumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FF516AE2C06B918007F0762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF516C42C06B919007F0762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF516CE2C06B919007F0762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FF516A82C06B918007F0762 = {
+			isa = PBXGroup;
+			children = (
+				1FF516B32C06B918007F0762 /* hyrulecompendium */,
+				1FF516CA2C06B919007F0762 /* hyrulecompendiumTests */,
+				1FF516D42C06B919007F0762 /* hyrulecompendiumUITests */,
+				1FF516B22C06B918007F0762 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FF516B22C06B918007F0762 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FF516B12C06B918007F0762 /* hyrulecompendium.app */,
+				1FF516C72C06B919007F0762 /* hyrulecompendiumTests.xctest */,
+				1FF516D12C06B919007F0762 /* hyrulecompendiumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FF516B32C06B918007F0762 /* hyrulecompendium */ = {
+			isa = PBXGroup;
+			children = (
+				1FF516B42C06B918007F0762 /* AppDelegate.swift */,
+				1FF516B62C06B918007F0762 /* SceneDelegate.swift */,
+				1FF516B82C06B918007F0762 /* ViewController.swift */,
+				1FF516BA2C06B918007F0762 /* Main.storyboard */,
+				1FF516BD2C06B919007F0762 /* Assets.xcassets */,
+				1FF516BF2C06B919007F0762 /* LaunchScreen.storyboard */,
+				1FF516C22C06B919007F0762 /* Info.plist */,
+			);
+			path = hyrulecompendium;
+			sourceTree = "<group>";
+		};
+		1FF516CA2C06B919007F0762 /* hyrulecompendiumTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FF516CB2C06B919007F0762 /* hyrulecompendiumTests.swift */,
+			);
+			path = hyrulecompendiumTests;
+			sourceTree = "<group>";
+		};
+		1FF516D42C06B919007F0762 /* hyrulecompendiumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1FF516D52C06B919007F0762 /* hyrulecompendiumUITests.swift */,
+				1FF516D72C06B919007F0762 /* hyrulecompendiumUITestsLaunchTests.swift */,
+			);
+			path = hyrulecompendiumUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FF516B02C06B918007F0762 /* hyrulecompendium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FF516DB2C06B919007F0762 /* Build configuration list for PBXNativeTarget "hyrulecompendium" */;
+			buildPhases = (
+				1FF516AD2C06B918007F0762 /* Sources */,
+				1FF516AE2C06B918007F0762 /* Frameworks */,
+				1FF516AF2C06B918007F0762 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hyrulecompendium;
+			productName = hyrulecompendium;
+			productReference = 1FF516B12C06B918007F0762 /* hyrulecompendium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FF516C62C06B919007F0762 /* hyrulecompendiumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FF516DE2C06B919007F0762 /* Build configuration list for PBXNativeTarget "hyrulecompendiumTests" */;
+			buildPhases = (
+				1FF516C32C06B919007F0762 /* Sources */,
+				1FF516C42C06B919007F0762 /* Frameworks */,
+				1FF516C52C06B919007F0762 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FF516C92C06B919007F0762 /* PBXTargetDependency */,
+			);
+			name = hyrulecompendiumTests;
+			productName = hyrulecompendiumTests;
+			productReference = 1FF516C72C06B919007F0762 /* hyrulecompendiumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1FF516D02C06B919007F0762 /* hyrulecompendiumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FF516E12C06B919007F0762 /* Build configuration list for PBXNativeTarget "hyrulecompendiumUITests" */;
+			buildPhases = (
+				1FF516CD2C06B919007F0762 /* Sources */,
+				1FF516CE2C06B919007F0762 /* Frameworks */,
+				1FF516CF2C06B919007F0762 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FF516D32C06B919007F0762 /* PBXTargetDependency */,
+			);
+			name = hyrulecompendiumUITests;
+			productName = hyrulecompendiumUITests;
+			productReference = 1FF516D12C06B919007F0762 /* hyrulecompendiumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FF516A92C06B918007F0762 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					1FF516B02C06B918007F0762 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					1FF516C62C06B919007F0762 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 1FF516B02C06B918007F0762;
+					};
+					1FF516D02C06B919007F0762 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 1FF516B02C06B918007F0762;
+					};
+				};
+			};
+			buildConfigurationList = 1FF516AC2C06B918007F0762 /* Build configuration list for PBXProject "hyrulecompendium" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FF516A82C06B918007F0762;
+			productRefGroup = 1FF516B22C06B918007F0762 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FF516B02C06B918007F0762 /* hyrulecompendium */,
+				1FF516C62C06B919007F0762 /* hyrulecompendiumTests */,
+				1FF516D02C06B919007F0762 /* hyrulecompendiumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FF516AF2C06B918007F0762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF516BE2C06B919007F0762 /* Assets.xcassets in Resources */,
+				1FF516C12C06B919007F0762 /* Base in Resources */,
+				1FF516BC2C06B918007F0762 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF516C52C06B919007F0762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF516CF2C06B919007F0762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FF516AD2C06B918007F0762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF516B92C06B918007F0762 /* ViewController.swift in Sources */,
+				1FF516B52C06B918007F0762 /* AppDelegate.swift in Sources */,
+				1FF516B72C06B918007F0762 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF516C32C06B919007F0762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF516CC2C06B919007F0762 /* hyrulecompendiumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF516CD2C06B919007F0762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF516D82C06B919007F0762 /* hyrulecompendiumUITestsLaunchTests.swift in Sources */,
+				1FF516D62C06B919007F0762 /* hyrulecompendiumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FF516C92C06B919007F0762 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FF516B02C06B918007F0762 /* hyrulecompendium */;
+			targetProxy = 1FF516C82C06B919007F0762 /* PBXContainerItemProxy */;
+		};
+		1FF516D32C06B919007F0762 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FF516B02C06B918007F0762 /* hyrulecompendium */;
+			targetProxy = 1FF516D22C06B919007F0762 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FF516BA2C06B918007F0762 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FF516BB2C06B918007F0762 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1FF516BF2C06B919007F0762 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FF516C02C06B919007F0762 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FF516D92C06B919007F0762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FF516DA2C06B919007F0762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FF516DC2C06B919007F0762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8Q386HL4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hyrulecompendium/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = labram.hyrulecompendium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FF516DD2C06B919007F0762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8Q386HL4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hyrulecompendium/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = labram.hyrulecompendium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1FF516DF2C06B919007F0762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8Q386HL4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = labram.hyrulecompendiumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hyrulecompendium.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hyrulecompendium";
+			};
+			name = Debug;
+		};
+		1FF516E02C06B919007F0762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8Q386HL4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = labram.hyrulecompendiumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hyrulecompendium.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hyrulecompendium";
+			};
+			name = Release;
+		};
+		1FF516E22C06B919007F0762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8Q386HL4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = labram.hyrulecompendiumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hyrulecompendium;
+			};
+			name = Debug;
+		};
+		1FF516E32C06B919007F0762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8Q386HL4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = labram.hyrulecompendiumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hyrulecompendium;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FF516AC2C06B918007F0762 /* Build configuration list for PBXProject "hyrulecompendium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FF516D92C06B919007F0762 /* Debug */,
+				1FF516DA2C06B919007F0762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FF516DB2C06B919007F0762 /* Build configuration list for PBXNativeTarget "hyrulecompendium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FF516DC2C06B919007F0762 /* Debug */,
+				1FF516DD2C06B919007F0762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FF516DE2C06B919007F0762 /* Build configuration list for PBXNativeTarget "hyrulecompendiumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FF516DF2C06B919007F0762 /* Debug */,
+				1FF516E02C06B919007F0762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FF516E12C06B919007F0762 /* Build configuration list for PBXNativeTarget "hyrulecompendiumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FF516E22C06B919007F0762 /* Debug */,
+				1FF516E32C06B919007F0762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FF516A92C06B918007F0762 /* Project object */;
+}
