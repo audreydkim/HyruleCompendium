@@ -1,6 +1,6 @@
 import Foundation
 
-// Define the Monster data model
+//Structs for different schemas based on properties given
 struct Monster: Codable {
     let category: String
     let common_locations: [String]?
@@ -12,9 +12,63 @@ struct Monster: Codable {
     let name: String
 }
 
+struct Property: Codable {
+    let attack: Int
+    let defense: Int
+    let effect: String?
+    let type: String?
+}
+
+struct Equipment: Codable {
+    let name: String
+    let id: Int
+    let category: String
+    let description: String
+    let image: String
+    let common_locations: [String]?
+    let properties: Property
+    let dlc: Bool
+}
+
+struct Material: Codable {
+    let name: String
+    let id: Int
+    let catergory: String
+    let description: String
+    let image: String
+    let common_locations: [String]?
+    let hearts_recovered: Float
+    let cooking_effect: String
+    let dlc: Bool
+}
+
+struct Creature: Codable {
+    let name: String
+    let id: Int
+    let category: String
+    let description: String
+    let image: String
+    let cooking_effect: String
+    let common_locations: [String]?
+    let edible: Bool
+    let hearts_recovered: Float
+    let dlc: Bool
+}
+
+struct Treasure: Codable {
+    let name: String
+    let id: Int
+    let category: String
+    let description: String
+    let image: String
+    let common_locations: [String]?
+    let drops: [String]?
+    let dlc: Bool
+}
+
 // HandleData class to fetch data
-class HandleData {
-    var data: [Monster] = []
+class HandleData<T: Codable> {
+    var data: [T] = []
     let url: String
     
     init(_ url: String) {
@@ -39,18 +93,12 @@ class HandleData {
                     NSLog("Error! \(String(describing: response))")
                     return
                 }
-
-                // Print the raw JSON data for debugging
-                if let string = String(data: data, encoding: .utf8) {
-                    NSLog("Raw JSON data: \(string)")
-                }
                 
                 do {
                     // Decode the JSON into the expected structure
-                    let jsonData = try JSONDecoder().decode([String: [Monster]].self, from: data)
+                    let jsonData = try JSONDecoder().decode([String: [T]].self, from: data)
                     DispatchQueue.main.async {
                         self?.data = jsonData["data"] ?? []
-                        NSLog("Data parsed successfully: \(self?.data.count ?? 0) items")
                         completion()
                     }
                 } catch {
