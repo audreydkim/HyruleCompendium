@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1FF516B52C06B918007F0762 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF516B42C06B918007F0762 /* AppDelegate.swift */; };
 		1FF516B72C06B918007F0762 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF516B62C06B918007F0762 /* SceneDelegate.swift */; };
-		1FF516B92C06B918007F0762 /* CompendiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF516B82C06B918007F0762 /* CompendiumViewController.swift */; };
+		1FF516B92C06B918007F0762 /* MonsterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF516B82C06B918007F0762 /* MonsterViewController.swift */; };
 		1FF516BC2C06B918007F0762 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1FF516BB2C06B918007F0762 /* Base */; };
 		1FF516BE2C06B919007F0762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF516BD2C06B919007F0762 /* Assets.xcassets */; };
 		1FF516C12C06B919007F0762 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1FF516C02C06B919007F0762 /* Base */; };
@@ -41,7 +41,7 @@
 		1FF516B12C06B918007F0762 /* hyrulecompendium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyrulecompendium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF516B42C06B918007F0762 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FF516B62C06B918007F0762 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1FF516B82C06B918007F0762 /* CompendiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompendiumViewController.swift; sourceTree = "<group>"; };
+		1FF516B82C06B918007F0762 /* MonsterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterViewController.swift; sourceTree = "<group>"; };
 		1FF516BB2C06B918007F0762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FF516BD2C06B919007F0762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FF516C02C06B919007F0762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			children = (
 				1FF516B42C06B918007F0762 /* AppDelegate.swift */,
 				1FF516B62C06B918007F0762 /* SceneDelegate.swift */,
-				1FF516B82C06B918007F0762 /* CompendiumViewController.swift */,
+				1FF516B82C06B918007F0762 /* MonsterViewController.swift */,
 				1FF516E42C06B9A9007F0762 /* HandleDataModel.swift */,
 				1FF95C4C2C0725B40071DCC6 /* TableViewCell.swift */,
 				1FF516BA2C06B918007F0762 /* Main.storyboard */,
@@ -266,7 +266,7 @@
 			files = (
 				1FF95C4D2C0725B40071DCC6 /* TableViewCell.swift in Sources */,
 				1FF516E52C06B9A9007F0762 /* HandleDataModel.swift in Sources */,
-				1FF516B92C06B918007F0762 /* CompendiumViewController.swift in Sources */,
+				1FF516B92C06B918007F0762 /* MonsterViewController.swift in Sources */,
 				1FF516B52C06B918007F0762 /* AppDelegate.swift in Sources */,
 				1FF516B72C06B918007F0762 /* SceneDelegate.swift in Sources */,
 			);
