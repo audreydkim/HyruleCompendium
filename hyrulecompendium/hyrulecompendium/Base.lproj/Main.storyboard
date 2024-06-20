@@ -60,33 +60,33 @@
             </objects>
             <point key="canvasLocation" x="808" y="-27"/>
         </scene>
-        <!--Item 2-->
+        <!--Todo View Controller-->
         <scene sceneID="N8n-RG-Qlb">
             <objects>
-                <viewController id="dCn-Yl-Ihi" sceneMemberID="viewController">
+                <viewController title="Todo View Controller" id="dCn-Yl-Ihi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sq2-A5-uxC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="VIb-jV-3gd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="7jI-35-ZOY"/>
+                    <tabBarItem key="tabBarItem" title="Todo" id="7jI-35-ZOY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pwZ-bT-w4N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-457" y="367"/>
         </scene>
-        <!--Item 1-->
+        <!--Diary View Controller-->
         <scene sceneID="i1d-AX-OF9">
             <objects>
-                <viewController id="2sR-Od-sHp" sceneMemberID="viewController">
+                <viewController title="Diary View Controller" id="2sR-Od-sHp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dqU-rx-pbC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="wQg-ts-XaH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="HTS-Oc-2Nb"/>
+                    <tabBarItem key="tabBarItem" title="Diary" id="HTS-Oc-2Nb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HoX-Zs-bzZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
