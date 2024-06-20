@@ -10,6 +10,7 @@ import UIKit
 class CompendiumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let schemas: [String] = ["Monsters", "Creatures", "Equipment", "Materials", "Treasure"]
+    let images: [String] = ["monster", "horse", "sword", "pear", "treasure-chest"]
 //    let images: [String]
     
     @IBOutlet weak var compTableView: UITableView!
@@ -30,8 +31,13 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SchemaTableViewCell.identifier, for: indexPath) as! SchemaTableViewCell
-        cell.button.setTitle(schemas[indexPath.row], for: .normal)
+        cell.label.text = schemas[indexPath.row]
+        cell.icon.image = UIImage(named: images[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        compTableView.deselectRow(at: indexPath, animated: true)
     }
     
     private func loadButtonDetails() {

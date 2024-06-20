@@ -16,22 +16,33 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXB-6L-lOK">
-                        <rect key="frame" x="119" y="24" width="82" height="35"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="beS-K2-ZhL">
+                        <rect key="frame" x="80" y="20" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="43" id="R14-oZ-vie"/>
+                            <constraint firstAttribute="height" constant="43" id="vTm-PJ-15n"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngm-76-lbp">
+                        <rect key="frame" x="137" y="31" width="66.333333333333314" height="21"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title="Button"/>
-                    </button>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="lXB-6L-lOK" secondAttribute="bottom" constant="24" id="mxK-nY-qY6"/>
-                    <constraint firstItem="lXB-6L-lOK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="tIc-ZT-prg"/>
-                    <constraint firstItem="lXB-6L-lOK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="u2B-FE-Y06"/>
+                    <constraint firstItem="Ngm-76-lbp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="31" id="2Rw-6q-VOv"/>
+                    <constraint firstItem="Ngm-76-lbp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="10" id="Be6-i4-1gB"/>
+                    <constraint firstAttribute="bottom" secondItem="beS-K2-ZhL" secondAttribute="bottom" constant="20" id="JKb-rr-EOM"/>
+                    <constraint firstItem="beS-K2-ZhL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Kxf-iF-Ujf"/>
+                    <constraint firstAttribute="bottom" secondItem="Ngm-76-lbp" secondAttribute="bottom" constant="31" id="ZXe-Bo-fGd"/>
+                    <constraint firstItem="beS-K2-ZhL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="80" id="pd3-4L-2Lo"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="button" destination="lXB-6L-lOK" id="QMa-jB-UQu"/>
+                <outlet property="icon" destination="beS-K2-ZhL" id="1mm-hv-yF3"/>
+                <outlet property="label" destination="Ngm-76-lbp" id="HwZ-Lb-muZ"/>
             </connections>
             <point key="canvasLocation" x="39.694656488549619" y="33.450704225352112"/>
         </tableViewCell>
