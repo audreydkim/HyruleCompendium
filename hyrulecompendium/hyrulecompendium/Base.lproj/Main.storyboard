@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -67,8 +68,28 @@
                     <view key="view" contentMode="scaleToFill" id="sq2-A5-uxC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am the todo scene." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uf2-RJ-ne4">
+                                <rect key="frame" x="119" y="415.66666666666669" width="155" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7F-Tl-KFh">
+                                <rect key="frame" x="170" y="69" width="53" height="28"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VIb-jV-3gd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uf2-RJ-ne4" firstAttribute="centerX" secondItem="sq2-A5-uxC" secondAttribute="centerX" id="QFd-h6-oeE"/>
+                            <constraint firstItem="uf2-RJ-ne4" firstAttribute="centerY" secondItem="sq2-A5-uxC" secondAttribute="centerY" id="hkn-eW-Rc3"/>
+                            <constraint firstItem="k7F-Tl-KFh" firstAttribute="top" secondItem="VIb-jV-3gd" secondAttribute="top" constant="10" id="ni1-gb-8da"/>
+                            <constraint firstItem="k7F-Tl-KFh" firstAttribute="centerX" secondItem="sq2-A5-uxC" secondAttribute="centerX" id="ue5-8g-v6K"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Todo" id="7jI-35-ZOY"/>
                 </viewController>
@@ -85,22 +106,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZfQ-Y7-0Ei">
-                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <rect key="frame" x="0.0" y="109" width="393" height="660"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compendium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfV-Cc-t1R">
+                                <rect key="frame" x="124" y="69" width="145" height="28"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mtk-eu-jo3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mtk-eu-jo3" firstAttribute="bottom" secondItem="ZfQ-Y7-0Ei" secondAttribute="bottom" id="IfT-an-szN"/>
+                            <constraint firstItem="FfV-Cc-t1R" firstAttribute="top" secondItem="mtk-eu-jo3" secondAttribute="top" constant="10" id="KUF-vG-SM8"/>
                             <constraint firstItem="mtk-eu-jo3" firstAttribute="trailing" secondItem="ZfQ-Y7-0Ei" secondAttribute="trailing" id="fkB-m9-IV7"/>
-                            <constraint firstItem="ZfQ-Y7-0Ei" firstAttribute="top" secondItem="mtk-eu-jo3" secondAttribute="top" id="leC-V2-9mF"/>
+                            <constraint firstItem="ZfQ-Y7-0Ei" firstAttribute="top" secondItem="mtk-eu-jo3" secondAttribute="top" constant="50" id="leC-V2-9mF"/>
                             <constraint firstItem="ZfQ-Y7-0Ei" firstAttribute="leading" secondItem="mtk-eu-jo3" secondAttribute="leading" id="u66-QE-XcB"/>
+                            <constraint firstItem="FfV-Cc-t1R" firstAttribute="centerX" secondItem="MfK-Ld-d4S" secondAttribute="centerX" id="vUT-zU-Vl3"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Compendium" id="FH5-Yb-YHT"/>
                     <connections>
                         <outlet property="compTableView" destination="ZfQ-Y7-0Ei" id="SVL-nr-Fgz"/>
+                        <outlet property="label" destination="FfV-Cc-t1R" id="W9Z-Dy-Kho"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioP-y9-Rs8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -114,8 +144,28 @@
                     <view key="view" contentMode="scaleToFill" id="dqU-rx-pbC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am the diary scene." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-xV-LQo">
+                                <rect key="frame" x="117.66666666666669" y="415.66666666666669" width="158" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iC-7K-Vj8">
+                                <rect key="frame" x="168" y="69" width="57" height="28"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wQg-ts-XaH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hsg-xV-LQo" firstAttribute="centerY" secondItem="dqU-rx-pbC" secondAttribute="centerY" id="91O-aC-Jan"/>
+                            <constraint firstItem="Hsg-xV-LQo" firstAttribute="centerX" secondItem="dqU-rx-pbC" secondAttribute="centerX" id="QHn-PG-lHP"/>
+                            <constraint firstItem="3iC-7K-Vj8" firstAttribute="top" secondItem="wQg-ts-XaH" secondAttribute="top" constant="10" id="Vmy-Bd-51g"/>
+                            <constraint firstItem="3iC-7K-Vj8" firstAttribute="centerX" secondItem="dqU-rx-pbC" secondAttribute="centerX" id="cXa-5A-q9g"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Diary" id="HTS-Oc-2Nb"/>
                 </viewController>
@@ -144,6 +194,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

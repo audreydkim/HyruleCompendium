@@ -15,6 +15,8 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @IBOutlet weak var compTableView: UITableView!
     
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib(nibName: "SchemaTableViewCell", bundle: nil)
