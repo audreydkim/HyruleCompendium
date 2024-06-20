@@ -25,6 +25,7 @@ extension UIImageView {
         }.resume()
     }
 }
+
 class MonsterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var monsterTableView: UITableView!
