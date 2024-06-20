@@ -8,7 +8,10 @@
 import UIKit
 
 class SchemaTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var button: UIButton!
+    static let identifier = "SchemaTableViewCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

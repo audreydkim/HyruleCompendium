@@ -84,23 +84,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO6-Vn-Qwf">
-                                <rect key="frame" x="149.66666666666666" y="405.66666666666669" width="94" height="41"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Monster"/>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZfQ-Y7-0Ei">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mtk-eu-jo3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vO6-Vn-Qwf" firstAttribute="centerY" secondItem="MfK-Ld-d4S" secondAttribute="centerY" id="hgY-jq-ec9"/>
-                            <constraint firstItem="vO6-Vn-Qwf" firstAttribute="centerX" secondItem="MfK-Ld-d4S" secondAttribute="centerX" id="wcb-ld-dN0"/>
+                            <constraint firstItem="mtk-eu-jo3" firstAttribute="bottom" secondItem="ZfQ-Y7-0Ei" secondAttribute="bottom" id="IfT-an-szN"/>
+                            <constraint firstItem="mtk-eu-jo3" firstAttribute="trailing" secondItem="ZfQ-Y7-0Ei" secondAttribute="trailing" id="fkB-m9-IV7"/>
+                            <constraint firstItem="ZfQ-Y7-0Ei" firstAttribute="top" secondItem="mtk-eu-jo3" secondAttribute="top" id="leC-V2-9mF"/>
+                            <constraint firstItem="ZfQ-Y7-0Ei" firstAttribute="leading" secondItem="mtk-eu-jo3" secondAttribute="leading" id="u66-QE-XcB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Compendium" id="FH5-Yb-YHT"/>
                     <connections>
-                        <outlet property="monstersButton" destination="vO6-Vn-Qwf" id="KGY-k8-t4K"/>
+                        <outlet property="compTableView" destination="ZfQ-Y7-0Ei" id="SVL-nr-Fgz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioP-y9-Rs8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

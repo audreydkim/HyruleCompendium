@@ -21,6 +21,8 @@
 		76BA59BF2C23DB9200002891 /* CompendiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA59BE2C23DB9200002891 /* CompendiumViewController.swift */; };
 		76BA59C12C23DB9D00002891 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA59C02C23DB9D00002891 /* TodoViewController.swift */; };
 		76BA59C32C23DBA700002891 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA59C22C23DBA700002891 /* DiaryViewController.swift */; };
+		76BA59C62C23F02C00002891 /* SchemaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BA59C52C23F02C00002891 /* SchemaTableViewCell.xib */; };
+		76BA59C72C23F02C00002891 /* SchemaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA59C42C23F02C00002891 /* SchemaTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		76BA59BE2C23DB9200002891 /* CompendiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompendiumViewController.swift; sourceTree = "<group>"; };
 		76BA59C02C23DB9D00002891 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		76BA59C22C23DBA700002891 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		76BA59C42C23F02C00002891 /* SchemaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaTableViewCell.swift; sourceTree = "<group>"; };
+		76BA59C52C23F02C00002891 /* SchemaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchemaTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				76BA59BE2C23DB9200002891 /* CompendiumViewController.swift */,
 				76BA59C02C23DB9D00002891 /* TodoViewController.swift */,
 				76BA59C22C23DBA700002891 /* DiaryViewController.swift */,
+				76BA59C42C23F02C00002891 /* SchemaTableViewCell.swift */,
+				76BA59C52C23F02C00002891 /* SchemaTableViewCell.xib */,
 			);
 			path = hyrulecompendium;
 			sourceTree = "<group>";
@@ -246,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76BA59C62C23F02C00002891 /* SchemaTableViewCell.xib in Resources */,
 				1FF516BE2C06B919007F0762 /* Assets.xcassets in Resources */,
 				1FF516C12C06B919007F0762 /* Base in Resources */,
 				1FF516BC2C06B918007F0762 /* Base in Resources */,
@@ -274,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FF95C4D2C0725B40071DCC6 /* TableViewCell.swift in Sources */,
+				76BA59C72C23F02C00002891 /* SchemaTableViewCell.swift in Sources */,
 				1FF516E52C06B9A9007F0762 /* HandleDataModel.swift in Sources */,
 				76BA59C12C23DB9D00002891 /* TodoViewController.swift in Sources */,
 				1FF516B92C06B918007F0762 /* MonsterViewController.swift in Sources */,
