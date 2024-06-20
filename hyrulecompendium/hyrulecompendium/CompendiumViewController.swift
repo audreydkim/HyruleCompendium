@@ -19,7 +19,7 @@ class CompendiumViewController: UIViewController {
     
 
     private func loadButtonDetails() {
-        monstersButton.setTitle("Monsters", for: .normal)
+        //monstersButton.setTitle("Monsters", for: .normal)
     }
     /*
     // MARK: - Navigation
