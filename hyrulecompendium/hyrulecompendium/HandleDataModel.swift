@@ -13,8 +13,8 @@ struct Monster: Codable {
 }
 
 struct Property: Codable {
-    let attack: Int
-    let defense: Int
+    let attack: Int?
+    let defense: Int?
     let effect: String?
     let type: String?
 }
@@ -37,8 +37,8 @@ struct Material: Codable {
     let description: String
     let image: String
     let common_locations: [String]?
-    let hearts_recovered: Float
-    let cooking_effect: String
+    let hearts_recovered: Float?
+    let cooking_effect: String?
     let dlc: Bool
 }
 
@@ -48,10 +48,10 @@ struct Creature: Codable {
     let category: String
     let description: String
     let image: String
-    let cooking_effect: String
+    let cooking_effect: String?
     let common_locations: [String]?
     let edible: Bool
-    let hearts_recovered: Float
+    let hearts_recovered: Float?
     let dlc: Bool
 }
 
