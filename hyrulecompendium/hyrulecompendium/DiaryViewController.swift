@@ -1,5 +1,5 @@
 //
-//  TodoViewController.swift
+//  DiaryViewController.swift
 //  hyrulecompendium
 //
 //  Created by Audrey Kim on 6/19/24.
