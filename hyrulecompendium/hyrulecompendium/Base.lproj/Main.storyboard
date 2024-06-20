@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808" y="-27"/>
+            <point key="canvasLocation" x="1433" y="367"/>
         </scene>
         <!--Todo View Controller-->
         <scene sceneID="N8n-RG-Qlb">
@@ -83,10 +83,24 @@
                     <view key="view" contentMode="scaleToFill" id="MfK-Ld-d4S">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO6-Vn-Qwf">
+                                <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="mtk-eu-jo3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vO6-Vn-Qwf" firstAttribute="centerY" secondItem="MfK-Ld-d4S" secondAttribute="centerY" id="hgY-jq-ec9"/>
+                            <constraint firstItem="vO6-Vn-Qwf" firstAttribute="centerX" secondItem="MfK-Ld-d4S" secondAttribute="centerX" id="wcb-ld-dN0"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Compendium" id="FH5-Yb-YHT"/>
+                    <connections>
+                        <outlet property="monstersButton" destination="vO6-Vn-Qwf" id="KGY-k8-t4K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioP-y9-Rs8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,13 +9,18 @@ import UIKit
 
 class CompendiumViewController: UIViewController {
 
+    @IBOutlet weak var monstersButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        loadButtonDetails()
     }
     
 
+    private func loadButtonDetails() {
+        monstersButton.setTitle("Monsters", for: .normal)
+    }
     /*
     // MARK: - Navigation
 
