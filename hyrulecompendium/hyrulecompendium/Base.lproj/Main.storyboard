@@ -63,7 +63,7 @@
         <!--Todo View Controller-->
         <scene sceneID="N8n-RG-Qlb">
             <objects>
-                <viewController title="Todo View Controller" id="dCn-Yl-Ihi" sceneMemberID="viewController">
+                <viewController title="Todo View Controller" id="dCn-Yl-Ihi" customClass="TodoViewController" customModule="hyrulecompendium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sq2-A5-uxC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,7 @@
         <!--Diary View Controller-->
         <scene sceneID="i1d-AX-OF9">
             <objects>
-                <viewController title="Diary View Controller" id="2sR-Od-sHp" sceneMemberID="viewController">
+                <viewController title="Diary View Controller" id="2sR-Od-sHp" customClass="DiaryViewController" customModule="hyrulecompendium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dqU-rx-pbC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
