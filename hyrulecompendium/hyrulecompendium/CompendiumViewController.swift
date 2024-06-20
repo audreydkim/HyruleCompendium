@@ -26,7 +26,7 @@ extension UIImageView {
     }
 }
 
-class MonsterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CompendiumViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var monsterTableView: UITableView!
     
