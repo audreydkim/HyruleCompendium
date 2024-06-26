@@ -11,7 +11,8 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
     
     let schemas: [String] = ["Monsters", "Creatures", "Equipment", "Materials", "Treasure"]
     let images: [String] = ["monster", "horse", "sword", "pear", "treasure-chest"]
-    let viewCons: [String] = ["MonsterViewController", "", "", "", "TreasureViewController"]
+    let viewCons: [String] = ["MonsterViewController", "CreaturesViewController", "EquipmentViewController", "MaterialsViewController", "TreasureViewController"]
+    
     
     @IBOutlet weak var compTableView: UITableView!
     
@@ -39,15 +40,31 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         compTableView.deselectRow(at: indexPath, animated: true)
-        NSLog("hello")
-        if let vc = storyboard?.instantiateViewController(withIdentifier: viewCons[indexPath.row]) as? TreasureViewController {
-            navigationController?.pushViewController(vc, animated: true) // this allows our view to change to our view controller for the quiz we clicked on
+        var vc = storyboard?.instantiateViewController(withIdentifier: viewCons[indexPath.row])
+        if let vc = storyboard?.instantiateViewController(withIdentifier: viewCons[indexPath.row]) {
+            let i = viewCons[indexPath.row]
+            switch i {
+            case "MonsterViewController" :
+                vc as! MonsterViewController
+            case "CreaturesViewController":
+                vc as! CreaturesViewController
+            case "EquipmentViewController":
+                vc as! EquipmentViewController
+            case "MaterialsViewController":
+                vc as! MaterialsViewController
+            case "TreasureViewController" :
+                vc as! TreasureViewController
+            default :
+                NSLog("there was error in defining class of scheme view controller")
+            }
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
     
-     func loadButtonDetails() {
+    func loadButtonDetails() {
         //monstersButton.setTitle("Monsters", for: .normal)
     }
+    
     /*
     // MARK: - Navigation
 
@@ -57,5 +74,5 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

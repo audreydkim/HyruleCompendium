@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2359.5419847328244" y="366.90140845070425"/>
+            <point key="canvasLocation" x="381" y="1439"/>
         </scene>
         <!--Todo View Controller-->
         <scene sceneID="N8n-RG-Qlb">
@@ -198,7 +198,88 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dz3-g4-zvP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1707" y="-432"/>
+            <point key="canvasLocation" x="1240" y="1439"/>
+        </scene>
+        <!--Equipment View Controller-->
+        <scene sceneID="IdN-Ie-eFd">
+            <objects>
+                <viewController storyboardIdentifier="EquipmentViewController" id="RNt-52-GAU" customClass="EquipmentViewController" customModule="hyrulecompendium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uQc-6J-p8z">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EquipmentViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkA-cN-hRr">
+                                <rect key="frame" x="99.666666666666671" y="416" width="193.66666666666663" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="soE-3I-jdM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vkA-cN-hRr" firstAttribute="centerX" secondItem="uQc-6J-p8z" secondAttribute="centerX" id="QIf-5t-WqO"/>
+                            <constraint firstItem="vkA-cN-hRr" firstAttribute="centerY" secondItem="uQc-6J-p8z" secondAttribute="centerY" id="UL6-D4-uop"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6S-v5-N9D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2077" y="1439"/>
+        </scene>
+        <!--Creatures View Controller-->
+        <scene sceneID="6Pr-yU-wvm">
+            <objects>
+                <viewController storyboardIdentifier="CreaturesViewController" id="ZB7-h8-8wR" customClass="CreaturesViewController" customModule="hyrulecompendium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mEe-lR-saW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CreaturesViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTQ-RO-bpf">
+                                <rect key="frame" x="103.66666666666669" y="415.66666666666669" width="186" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iOT-32-mwu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZTQ-RO-bpf" firstAttribute="centerX" secondItem="mEe-lR-saW" secondAttribute="centerX" id="f0r-rH-ANj"/>
+                            <constraint firstItem="ZTQ-RO-bpf" firstAttribute="centerY" secondItem="mEe-lR-saW" secondAttribute="centerY" id="npv-Rc-FG0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8p-I0-6IO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2926" y="1439"/>
+        </scene>
+        <!--Materials View Controller-->
+        <scene sceneID="jky-hG-Jd0">
+            <objects>
+                <viewController storyboardIdentifier="MaterialsViewController" id="EGb-Pt-NkB" customClass="MaterialsViewController" customModule="hyrulecompendium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="79q-z9-abD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MaterialsViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4S-up-8rU">
+                                <rect key="frame" x="106" y="415.66666666666669" width="181" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vJ6-CY-fNc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S4S-up-8rU" firstAttribute="centerY" secondItem="79q-z9-abD" secondAttribute="centerY" id="f5L-gb-Qbd"/>
+                            <constraint firstItem="S4S-up-8rU" firstAttribute="centerX" secondItem="79q-z9-abD" secondAttribute="centerX" id="fbz-mk-G3Y"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hge-Gr-hc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3836" y="1439"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XJ3-H6-fZ4">

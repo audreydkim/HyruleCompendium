@@ -24,6 +24,9 @@
 		76BA59C62C23F02C00002891 /* SchemaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BA59C52C23F02C00002891 /* SchemaTableViewCell.xib */; };
 		76BA59C72C23F02C00002891 /* SchemaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA59C42C23F02C00002891 /* SchemaTableViewCell.swift */; };
 		76C64B272C2A5DE4002F354F /* TreasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64B262C2A5DE4002F354F /* TreasureViewController.swift */; };
+		76C64B292C2BADFE002F354F /* EquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64B282C2BADFE002F354F /* EquipmentViewController.swift */; };
+		76C64B2B2C2BAE53002F354F /* CreaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64B2A2C2BAE53002F354F /* CreaturesViewController.swift */; };
+		76C64B2D2C2BAF25002F354F /* MaterialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64B2C2C2BAF25002F354F /* MaterialsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		76BA59C42C23F02C00002891 /* SchemaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaTableViewCell.swift; sourceTree = "<group>"; };
 		76BA59C52C23F02C00002891 /* SchemaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchemaTableViewCell.xib; sourceTree = "<group>"; };
 		76C64B262C2A5DE4002F354F /* TreasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureViewController.swift; sourceTree = "<group>"; };
+		76C64B282C2BADFE002F354F /* EquipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentViewController.swift; sourceTree = "<group>"; };
+		76C64B2A2C2BAE53002F354F /* CreaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesViewController.swift; sourceTree = "<group>"; };
+		76C64B2C2C2BAF25002F354F /* MaterialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,9 @@
 				76BA59C42C23F02C00002891 /* SchemaTableViewCell.swift */,
 				76BA59C52C23F02C00002891 /* SchemaTableViewCell.xib */,
 				76C64B262C2A5DE4002F354F /* TreasureViewController.swift */,
+				76C64B282C2BADFE002F354F /* EquipmentViewController.swift */,
+				76C64B2A2C2BAE53002F354F /* CreaturesViewController.swift */,
+				76C64B2C2C2BAF25002F354F /* MaterialsViewController.swift */,
 			);
 			path = hyrulecompendium;
 			sourceTree = "<group>";
@@ -288,8 +297,11 @@
 				1FF516E52C06B9A9007F0762 /* HandleDataModel.swift in Sources */,
 				76BA59C12C23DB9D00002891 /* TodoViewController.swift in Sources */,
 				1FF516B92C06B918007F0762 /* MonsterViewController.swift in Sources */,
+				76C64B2B2C2BAE53002F354F /* CreaturesViewController.swift in Sources */,
+				76C64B2D2C2BAF25002F354F /* MaterialsViewController.swift in Sources */,
 				76C64B272C2A5DE4002F354F /* TreasureViewController.swift in Sources */,
 				76BA59C32C23DBA700002891 /* DiaryViewController.swift in Sources */,
+				76C64B292C2BADFE002F354F /* EquipmentViewController.swift in Sources */,
 				1FF516B52C06B918007F0762 /* AppDelegate.swift in Sources */,
 				1FF516B72C06B918007F0762 /* SceneDelegate.swift in Sources */,
 				76BA59BF2C23DB9200002891 /* CompendiumViewController.swift in Sources */,
