@@ -12,7 +12,7 @@
         <!--Monster View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MonsterViewController" customModule="hyrulecompendium" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MonsterViewController" id="BYZ-38-t0r" customClass="MonsterViewController" customModule="hyrulecompendium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433" y="367"/>
+            <point key="canvasLocation" x="2359.5419847328244" y="366.90140845070425"/>
         </scene>
         <!--Todo View Controller-->
         <scene sceneID="N8n-RG-Qlb">
@@ -106,11 +106,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZfQ-Y7-0Ei">
-                                <rect key="frame" x="0.0" y="109" width="393" height="660"/>
+                                <rect key="frame" x="0.0" y="153" width="393" height="616"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compendium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfV-Cc-t1R">
-                                <rect key="frame" x="124" y="69" width="145" height="28"/>
+                                <rect key="frame" x="124" y="113" width="145" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -127,7 +127,7 @@
                             <constraint firstItem="FfV-Cc-t1R" firstAttribute="centerX" secondItem="MfK-Ld-d4S" secondAttribute="centerX" id="vUT-zU-Vl3"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Compendium" id="FH5-Yb-YHT"/>
+                    <navigationItem key="navigationItem" id="KHW-18-o3m"/>
                     <connections>
                         <outlet property="compTableView" destination="ZfQ-Y7-0Ei" id="SVL-nr-Fgz"/>
                         <outlet property="label" destination="FfV-Cc-t1R" id="W9Z-Dy-Kho"/>
@@ -135,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioP-y9-Rs8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="314" y="367"/>
+            <point key="canvasLocation" x="1240.4580152671756" y="366.90140845070425"/>
         </scene>
         <!--Diary View Controller-->
         <scene sceneID="i1d-AX-OF9">
@@ -173,6 +173,33 @@
             </objects>
             <point key="canvasLocation" x="-1225" y="367"/>
         </scene>
+        <!--Treasure View Controller-->
+        <scene sceneID="HG9-Xk-ylK">
+            <objects>
+                <viewController storyboardIdentifier="TreasureViewController" id="lYi-CD-EvD" customClass="TreasureViewController" customModule="hyrulecompendium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nSf-OX-Mhj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TreasureViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRR-de-ppv">
+                                <rect key="frame" x="107.66666666666669" y="415.66666666666669" width="178" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vWg-VX-h5W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aRR-de-ppv" firstAttribute="centerX" secondItem="nSf-OX-Mhj" secondAttribute="centerX" id="Kgn-cG-zmJ"/>
+                            <constraint firstItem="aRR-de-ppv" firstAttribute="centerY" secondItem="nSf-OX-Mhj" secondAttribute="centerY" id="yzL-rF-F8z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dz3-g4-zvP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1707" y="-432"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XJ3-H6-fZ4">
             <objects>
@@ -185,12 +212,31 @@
                     <connections>
                         <segue destination="2sR-Od-sHp" kind="relationship" relationship="viewControllers" id="pGK-qH-0df"/>
                         <segue destination="dCn-Yl-Ihi" kind="relationship" relationship="viewControllers" id="8Sq-tt-Byt"/>
-                        <segue destination="hDZ-pm-HNU" kind="relationship" relationship="viewControllers" id="vvv-XE-3Xr"/>
+                        <segue destination="lW7-gg-Oov" kind="relationship" relationship="viewControllers" id="vvv-XE-3Xr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBJ-rC-GUR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-456" y="-493"/>
+        </scene>
+        <!--Compendium-->
+        <scene sceneID="kOO-95-bPj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lW7-gg-Oov" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Compendium" id="FH5-Yb-YHT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w7M-ng-pbN">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hDZ-pm-HNU" kind="relationship" relationship="rootViewController" id="utl-6R-wJx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfm-nH-YdD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313.74045801526717" y="366.90140845070425"/>
         </scene>
     </scenes>
     <resources>

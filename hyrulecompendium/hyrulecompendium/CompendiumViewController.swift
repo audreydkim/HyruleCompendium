@@ -11,7 +11,7 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
     
     let schemas: [String] = ["Monsters", "Creatures", "Equipment", "Materials", "Treasure"]
     let images: [String] = ["monster", "horse", "sword", "pear", "treasure-chest"]
-//    let images: [String]
+    let viewCons: [String] = ["MonsterViewController", "", "", "", "TreasureViewController"]
     
     @IBOutlet weak var compTableView: UITableView!
     
@@ -22,7 +22,6 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
         let nib = UINib(nibName: "SchemaTableViewCell", bundle: nil)
         compTableView.register(nib, forCellReuseIdentifier: SchemaTableViewCell.identifier)
         // Do any additional setup after loading the view.
-        loadButtonDetails()
         compTableView.delegate = self
         compTableView.dataSource = self
     }
@@ -40,9 +39,13 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         compTableView.deselectRow(at: indexPath, animated: true)
+        NSLog("hello")
+        if let vc = storyboard?.instantiateViewController(withIdentifier: viewCons[indexPath.row]) as? TreasureViewController {
+            navigationController?.pushViewController(vc, animated: true) // this allows our view to change to our view controller for the quiz we clicked on
+        }
     }
     
-    private func loadButtonDetails() {
+     func loadButtonDetails() {
         //monstersButton.setTitle("Monsters", for: .normal)
     }
     /*

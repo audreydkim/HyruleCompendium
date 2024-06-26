@@ -23,6 +23,7 @@
 		76BA59C32C23DBA700002891 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA59C22C23DBA700002891 /* DiaryViewController.swift */; };
 		76BA59C62C23F02C00002891 /* SchemaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BA59C52C23F02C00002891 /* SchemaTableViewCell.xib */; };
 		76BA59C72C23F02C00002891 /* SchemaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA59C42C23F02C00002891 /* SchemaTableViewCell.swift */; };
+		76C64B272C2A5DE4002F354F /* TreasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64B262C2A5DE4002F354F /* TreasureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		76BA59C22C23DBA700002891 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		76BA59C42C23F02C00002891 /* SchemaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaTableViewCell.swift; sourceTree = "<group>"; };
 		76BA59C52C23F02C00002891 /* SchemaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchemaTableViewCell.xib; sourceTree = "<group>"; };
+		76C64B262C2A5DE4002F354F /* TreasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				76BA59C22C23DBA700002891 /* DiaryViewController.swift */,
 				76BA59C42C23F02C00002891 /* SchemaTableViewCell.swift */,
 				76BA59C52C23F02C00002891 /* SchemaTableViewCell.xib */,
+				76C64B262C2A5DE4002F354F /* TreasureViewController.swift */,
 			);
 			path = hyrulecompendium;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				1FF516E52C06B9A9007F0762 /* HandleDataModel.swift in Sources */,
 				76BA59C12C23DB9D00002891 /* TodoViewController.swift in Sources */,
 				1FF516B92C06B918007F0762 /* MonsterViewController.swift in Sources */,
+				76C64B272C2A5DE4002F354F /* TreasureViewController.swift in Sources */,
 				76BA59C32C23DBA700002891 /* DiaryViewController.swift in Sources */,
 				1FF516B52C06B918007F0762 /* AppDelegate.swift in Sources */,
 				1FF516B72C06B918007F0762 /* SceneDelegate.swift in Sources */,
