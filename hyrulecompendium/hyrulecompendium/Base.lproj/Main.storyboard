@@ -230,14 +230,18 @@
         <!--Creatures View Controller-->
         <scene sceneID="6Pr-yU-wvm">
             <objects>
-                <viewController storyboardIdentifier="CreaturesViewController" id="ZB7-h8-8wR" customClass="CreaturesViewController" customModule="hyrulecompendium" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreaturesViewController" title="Creatures View Controller" id="ZB7-h8-8wR" customClass="CreaturesViewController" customModule="hyrulecompendium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mEe-lR-saW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CreaturesViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTQ-RO-bpf">
-                                <rect key="frame" x="103.66666666666669" y="415.66666666666669" width="186" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rYN-QH-tsf">
+                                <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creatures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHe-QK-U4D">
+                                <rect key="frame" x="143.33333333333334" y="69" width="106.66666666666666" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -245,14 +249,22 @@
                         <viewLayoutGuide key="safeArea" id="iOT-32-mwu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZTQ-RO-bpf" firstAttribute="centerX" secondItem="mEe-lR-saW" secondAttribute="centerX" id="f0r-rH-ANj"/>
-                            <constraint firstItem="ZTQ-RO-bpf" firstAttribute="centerY" secondItem="mEe-lR-saW" secondAttribute="centerY" id="npv-Rc-FG0"/>
+                            <constraint firstItem="rYN-QH-tsf" firstAttribute="top" secondItem="iOT-32-mwu" secondAttribute="top" constant="50" id="9Ky-DS-3oZ"/>
+                            <constraint firstItem="iOT-32-mwu" firstAttribute="bottom" secondItem="rYN-QH-tsf" secondAttribute="bottom" id="KkH-en-JYF"/>
+                            <constraint firstItem="nHe-QK-U4D" firstAttribute="top" secondItem="iOT-32-mwu" secondAttribute="top" constant="10" id="OLd-dy-REV"/>
+                            <constraint firstItem="rYN-QH-tsf" firstAttribute="leading" secondItem="iOT-32-mwu" secondAttribute="leading" id="axO-WM-Zvx"/>
+                            <constraint firstItem="iOT-32-mwu" firstAttribute="trailing" secondItem="rYN-QH-tsf" secondAttribute="trailing" id="uXb-uo-97c"/>
+                            <constraint firstItem="nHe-QK-U4D" firstAttribute="centerX" secondItem="mEe-lR-saW" secondAttribute="centerX" id="yEu-lG-Ypm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="nHe-QK-U4D" id="bnK-zP-F0q"/>
+                        <outlet property="tableView" destination="rYN-QH-tsf" id="6gy-kX-JQu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8p-I0-6IO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2926" y="1439"/>
+            <point key="canvasLocation" x="2925.9541984732823" y="1438.7323943661972"/>
         </scene>
         <!--Materials View Controller-->
         <scene sceneID="jky-hG-Jd0">

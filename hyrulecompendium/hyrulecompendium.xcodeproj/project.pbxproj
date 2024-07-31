@@ -18,6 +18,8 @@
 		1FF516D82C06B919007F0762 /* hyrulecompendiumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF516D72C06B919007F0762 /* hyrulecompendiumUITestsLaunchTests.swift */; };
 		1FF516E52C06B9A9007F0762 /* HandleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF516E42C06B9A9007F0762 /* HandleDataModel.swift */; };
 		1FF95C4D2C0725B40071DCC6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF95C4C2C0725B40071DCC6 /* TableViewCell.swift */; };
+		764073562C44C7C00069AD1E /* CreatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764073552C44C7C00069AD1E /* CreatureCell.xib */; };
+		764073572C44C7C00069AD1E /* CreatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764073542C44C7C00069AD1E /* CreatureCell.swift */; };
 		76BA59BF2C23DB9200002891 /* CompendiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA59BE2C23DB9200002891 /* CompendiumViewController.swift */; };
 		76BA59C12C23DB9D00002891 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA59C02C23DB9D00002891 /* TodoViewController.swift */; };
 		76BA59C32C23DBA700002891 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA59C22C23DBA700002891 /* DiaryViewController.swift */; };
@@ -62,6 +64,8 @@
 		1FF516D72C06B919007F0762 /* hyrulecompendiumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyrulecompendiumUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1FF516E42C06B9A9007F0762 /* HandleDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleDataModel.swift; sourceTree = "<group>"; };
 		1FF95C4C2C0725B40071DCC6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		764073542C44C7C00069AD1E /* CreatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureCell.swift; sourceTree = "<group>"; };
+		764073552C44C7C00069AD1E /* CreatureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatureCell.xib; sourceTree = "<group>"; };
 		76BA59BE2C23DB9200002891 /* CompendiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompendiumViewController.swift; sourceTree = "<group>"; };
 		76BA59C02C23DB9D00002891 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		76BA59C22C23DBA700002891 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				76C64B282C2BADFE002F354F /* EquipmentViewController.swift */,
 				76C64B2A2C2BAE53002F354F /* CreaturesViewController.swift */,
 				76C64B2C2C2BAF25002F354F /* MaterialsViewController.swift */,
+				764073542C44C7C00069AD1E /* CreatureCell.swift */,
+				764073552C44C7C00069AD1E /* CreatureCell.xib */,
 			);
 			path = hyrulecompendium;
 			sourceTree = "<group>";
@@ -268,6 +274,7 @@
 				1FF516BE2C06B919007F0762 /* Assets.xcassets in Resources */,
 				1FF516C12C06B919007F0762 /* Base in Resources */,
 				1FF516BC2C06B918007F0762 /* Base in Resources */,
+				764073562C44C7C00069AD1E /* CreatureCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				764073572C44C7C00069AD1E /* CreatureCell.swift in Sources */,
 				1FF95C4D2C0725B40071DCC6 /* TableViewCell.swift in Sources */,
 				76BA59C72C23F02C00002891 /* SchemaTableViewCell.swift in Sources */,
 				1FF516E52C06B9A9007F0762 /* HandleDataModel.swift in Sources */,
