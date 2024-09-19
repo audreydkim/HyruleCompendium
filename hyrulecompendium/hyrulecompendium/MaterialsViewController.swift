@@ -7,11 +7,12 @@
 
 import UIKit
 
+
 class MaterialsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Materials"
         // Do any additional setup after loading the view.
     }
     

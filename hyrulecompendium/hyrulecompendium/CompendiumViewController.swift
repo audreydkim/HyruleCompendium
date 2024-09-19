@@ -13,7 +13,7 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
     let images: [String] = ["monster", "horse", "sword", "pear", "treasure-chest"]
     let viewCons: [String] = ["MonsterViewController", "CreaturesViewController", "EquipmentViewController", "MaterialsViewController", "TreasureViewController"]
     
-    
+    // maybe when the compendium loads we fetch immediately... so we don't have to wait for nothing when shit happens
     @IBOutlet weak var compTableView: UITableView!
     
     @IBOutlet weak var label: UILabel!
@@ -25,6 +25,7 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
         // Do any additional setup after loading the view.
         compTableView.delegate = self
         compTableView.dataSource = self
+        title = "Compendium"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,7 +41,7 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         compTableView.deselectRow(at: indexPath, animated: true)
-        var vc = storyboard?.instantiateViewController(withIdentifier: viewCons[indexPath.row])
+        //var vc = storyboard?.instantiateViewController(withIdentifier: viewCons[indexPath.row])
         if let vc = storyboard?.instantiateViewController(withIdentifier: viewCons[indexPath.row]) {
             let i = viewCons[indexPath.row]
             switch i {
@@ -48,6 +49,7 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
                 vc as! MonsterViewController
             case "CreaturesViewController":
                 vc as! CreaturesViewController
+                // maybe load vc function?
             case "EquipmentViewController":
                 vc as! EquipmentViewController
             case "MaterialsViewController":
@@ -61,8 +63,8 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
         }
     }
     
-    func loadButtonDetails() {
-        //monstersButton.setTitle("Monsters", for: .normal)
+    // take in vc variable that's empty and load the preliminary cells with information before the vc gets pushed
+    func loadVC() {
     }
     
     /*

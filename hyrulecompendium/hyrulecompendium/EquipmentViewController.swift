@@ -12,6 +12,7 @@ class EquipmentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Equipment"
         // Do any additional setup after loading the view.
     }
     

@@ -127,7 +127,6 @@
 			children = (
 				1FF516B42C06B918007F0762 /* AppDelegate.swift */,
 				1FF516B62C06B918007F0762 /* SceneDelegate.swift */,
-				1FF516B82C06B918007F0762 /* MonsterViewController.swift */,
 				1FF516E42C06B9A9007F0762 /* HandleDataModel.swift */,
 				1FF95C4C2C0725B40071DCC6 /* TableViewCell.swift */,
 				1FF516BA2C06B918007F0762 /* Main.storyboard */,
@@ -139,6 +138,7 @@
 				76BA59C22C23DBA700002891 /* DiaryViewController.swift */,
 				76BA59C42C23F02C00002891 /* SchemaTableViewCell.swift */,
 				76BA59C52C23F02C00002891 /* SchemaTableViewCell.xib */,
+				1FF516B82C06B918007F0762 /* MonsterViewController.swift */,
 				76C64B262C2A5DE4002F354F /* TreasureViewController.swift */,
 				76C64B282C2BADFE002F354F /* EquipmentViewController.swift */,
 				76C64B2A2C2BAE53002F354F /* CreaturesViewController.swift */,

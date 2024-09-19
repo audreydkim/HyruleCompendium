@@ -11,7 +11,7 @@ class TreasureViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Treasure"
         // Do any additional setup after loading the view.
     }
     

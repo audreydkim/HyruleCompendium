@@ -106,31 +106,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZfQ-Y7-0Ei">
-                                <rect key="frame" x="0.0" y="153" width="393" height="616"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compendium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfV-Cc-t1R">
-                                <rect key="frame" x="124" y="113" width="145" height="28"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mtk-eu-jo3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mtk-eu-jo3" firstAttribute="bottom" secondItem="ZfQ-Y7-0Ei" secondAttribute="bottom" id="IfT-an-szN"/>
-                            <constraint firstItem="FfV-Cc-t1R" firstAttribute="top" secondItem="mtk-eu-jo3" secondAttribute="top" constant="10" id="KUF-vG-SM8"/>
                             <constraint firstItem="mtk-eu-jo3" firstAttribute="trailing" secondItem="ZfQ-Y7-0Ei" secondAttribute="trailing" id="fkB-m9-IV7"/>
-                            <constraint firstItem="ZfQ-Y7-0Ei" firstAttribute="top" secondItem="mtk-eu-jo3" secondAttribute="top" constant="50" id="leC-V2-9mF"/>
+                            <constraint firstItem="ZfQ-Y7-0Ei" firstAttribute="top" secondItem="mtk-eu-jo3" secondAttribute="top" id="leC-V2-9mF"/>
                             <constraint firstItem="ZfQ-Y7-0Ei" firstAttribute="leading" secondItem="mtk-eu-jo3" secondAttribute="leading" id="u66-QE-XcB"/>
-                            <constraint firstItem="FfV-Cc-t1R" firstAttribute="centerX" secondItem="MfK-Ld-d4S" secondAttribute="centerX" id="vUT-zU-Vl3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="KHW-18-o3m"/>
+                    <navigationItem key="navigationItem" title="Compendium" largeTitleDisplayMode="always" style="browser" id="KHW-18-o3m"/>
                     <connections>
                         <outlet property="compTableView" destination="ZfQ-Y7-0Ei" id="SVL-nr-Fgz"/>
-                        <outlet property="label" destination="FfV-Cc-t1R" id="W9Z-Dy-Kho"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioP-y9-Rs8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -203,7 +194,7 @@
         <!--Equipment View Controller-->
         <scene sceneID="IdN-Ie-eFd">
             <objects>
-                <viewController storyboardIdentifier="EquipmentViewController" id="RNt-52-GAU" customClass="EquipmentViewController" customModule="hyrulecompendium" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EquipmentViewController" title="Equipment View Controller" id="RNt-52-GAU" customClass="EquipmentViewController" customModule="hyrulecompendium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uQc-6J-p8z">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,29 +227,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rYN-QH-tsf">
-                                <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creatures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHe-QK-U4D">
-                                <rect key="frame" x="143.33333333333334" y="69" width="106.66666666666666" height="27.666666666666671"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iOT-32-mwu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rYN-QH-tsf" firstAttribute="top" secondItem="iOT-32-mwu" secondAttribute="top" constant="50" id="9Ky-DS-3oZ"/>
+                            <constraint firstItem="rYN-QH-tsf" firstAttribute="top" secondItem="iOT-32-mwu" secondAttribute="top" id="9Ky-DS-3oZ"/>
                             <constraint firstItem="iOT-32-mwu" firstAttribute="bottom" secondItem="rYN-QH-tsf" secondAttribute="bottom" id="KkH-en-JYF"/>
-                            <constraint firstItem="nHe-QK-U4D" firstAttribute="top" secondItem="iOT-32-mwu" secondAttribute="top" constant="10" id="OLd-dy-REV"/>
                             <constraint firstItem="rYN-QH-tsf" firstAttribute="leading" secondItem="iOT-32-mwu" secondAttribute="leading" id="axO-WM-Zvx"/>
                             <constraint firstItem="iOT-32-mwu" firstAttribute="trailing" secondItem="rYN-QH-tsf" secondAttribute="trailing" id="uXb-uo-97c"/>
-                            <constraint firstItem="nHe-QK-U4D" firstAttribute="centerX" secondItem="mEe-lR-saW" secondAttribute="centerX" id="yEu-lG-Ypm"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="label" destination="nHe-QK-U4D" id="bnK-zP-F0q"/>
                         <outlet property="tableView" destination="rYN-QH-tsf" id="6gy-kX-JQu"/>
                     </connections>
                 </viewController>

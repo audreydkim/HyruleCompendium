@@ -44,6 +44,7 @@ class MonsterViewController: UIViewController, UITableViewDataSource, UITableVie
         
         monsterTableView.dataSource = self
         monsterTableView.delegate = self
+        title = "Monsters"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
