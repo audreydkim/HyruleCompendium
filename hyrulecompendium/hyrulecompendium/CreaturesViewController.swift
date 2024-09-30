@@ -11,29 +11,31 @@ class CreaturesViewController: UIViewController, UITableViewDataSource, UITableV
     
 
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var tableView: UITableView!
+
+    @IBOutlet weak var creatureTableView: UITableView!
     var creaturesData: HandleData<Creature>! // when i make this i get "no initializer error"
     let url = URL(string: "https://botw-compendium.herokuapp.com/api/v3/compendium/category/creatures")
     var datal: [Creature2] = []
+    var imageCache: [String: UIImage] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib(nibName: "CreatureCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: CreatureCell.identifier)
-        tableView.dataSource = self
-        tableView.delegate = self
+        creatureTableView.register(nib, forCellReuseIdentifier: CreatureCell.identifier)
+        creatureTableView.dataSource = self
+        creatureTableView.delegate = self
         title = "Creatures"
 
-        fetch() { result in
+        fetch() { [weak self] result in
             // switch statement is condition used to compare (result) to case values
             switch result {
             case .success(let data):
                 NSLog("success <3")
-                self.datal = data
+                self?.datal = data
                 // proceed to do whatever you want with your read data (datal) ------------------------------------------
-                
-                NSLog("\(self.datal[0].name)")
-                NSLog("\(String(self.datal.count))")
+                DispatchQueue.main.async {
+                    self?.creatureTableView.reloadData()
+                }
             case .failure(let error):
                 NSLog("error: \(error)")
             }
@@ -66,13 +68,14 @@ class CreaturesViewController: UIViewController, UITableViewDataSource, UITableV
                 if string.isEmpty {
                     completion(.failure(FetchError.noData))
                 } else {
-                    // return data to completion success handler
                     NSLog("successful fetch")
                     NSLog("returned data: \(string)")
                     do {
                         let object = try JSONDecoder().decode(Big.self, from: data)
+                        // return decoded data to completion success handler
                         completion(.success(object.data))
                     } catch let decoderError {
+                        // return decoderError to completion failure handler
                         completion(.failure(decoderError))
                     }
                 }
@@ -82,16 +85,41 @@ class CreaturesViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1 //creaturesData.data.count
+        return datal.count //creaturesData.data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CreatureCell.identifier, for: indexPath) as! CreatureCell
-        
+        let creatureData = datal[indexPath.row]
         // inputing data into cells here
-        
+        cell.name.text = creatureData.name.uppercased()
+        cell.selectionStyle = .default
+        // check if we already have the url in our imageCache object
+        if let image = imageCache[creatureData.image] {
+            cell.icon.image = image
+        } else {
+            // proceed to download the image if we do not have the image already saved
+            ImageDownloader.downloadImage(creatureData.image) { [weak self]
+                  image, urlString in
+                if let imageObject = image {
+                    // performing UI operation on main thread
+                    DispatchQueue.main.async {
+                        cell.icon.image = imageObject
+                        self?.imageCache[urlString!] = imageObject
+                    }
+                } else {
+                    NSLog("Image returned nil")
+                }
+            }
+        }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        NSLog("Selected cell \(datal[indexPath.row].name)")
+    }
+    
 }
 
 // custom error codes to give us more information on what went wrong
@@ -116,4 +144,30 @@ struct Creature2: Decodable {
 
 struct Big: Decodable {
     let data: [Creature2]
+}
+
+class ImageDownloader {
+    static func downloadImage(_ urlString: String, completion: ((_ image: UIImage?, _ urlString: String?) -> ())?) {
+        
+       guard let url = URL(string: urlString) else {
+          completion?(nil, urlString)
+          return
+      }
+      URLSession.shared.dataTask(with: url) { (data, response,error) in
+         if let error = error {
+            print("error in downloading image: \(error)")
+            completion?(nil, urlString)
+            return
+         }
+         guard let httpResponse = response as? HTTPURLResponse,(200...299).contains(httpResponse.statusCode) else {
+            completion?(nil, urlString)
+            return
+         }
+         if let data = data, let image = UIImage(data: data) {
+            completion?(image, urlString)
+            return
+         }
+         completion?(nil, urlString)
+      }.resume()
+   }
 }

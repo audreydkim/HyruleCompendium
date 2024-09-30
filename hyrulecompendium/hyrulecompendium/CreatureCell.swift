@@ -9,6 +9,11 @@ import UIKit
 
 class CreatureCell: UITableViewCell {
     static let identifier = "CreatureCell"
+    
+    @IBOutlet weak var icon: UIImageView!
+    
+    @IBOutlet weak var name: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

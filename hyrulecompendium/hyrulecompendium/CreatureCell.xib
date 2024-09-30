@@ -15,8 +15,33 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jlD-h3-Ejo">
+                        <rect key="frame" x="16" y="24" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="ZnC-QO-uvN"/>
+                            <constraint firstAttribute="width" constant="50" id="wGr-0Q-hL8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymR-IT-tuf">
+                        <rect key="frame" x="135.33333333333334" y="37.666666666666664" width="49.333333333333343" height="23"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ymR-IT-tuf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="6n9-DC-YQG"/>
+                    <constraint firstItem="ymR-IT-tuf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NmK-1A-ypE"/>
+                    <constraint firstItem="jlD-h3-Ejo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TZQ-kv-lZL"/>
+                    <constraint firstItem="jlD-h3-Ejo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="VaZ-LT-1od"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="icon" destination="jlD-h3-Ejo" id="Ud0-9H-g97"/>
+                <outlet property="name" destination="ymR-IT-tuf" id="SB1-MZ-IJE"/>
+            </connections>
             <point key="canvasLocation" x="36.641221374045799" y="0.70422535211267612"/>
         </tableViewCell>
     </objects>

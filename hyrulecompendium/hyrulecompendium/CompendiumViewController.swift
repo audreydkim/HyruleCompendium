@@ -40,7 +40,7 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        compTableView.deselectRow(at: indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
         //var vc = storyboard?.instantiateViewController(withIdentifier: viewCons[indexPath.row])
         if let vc = storyboard?.instantiateViewController(withIdentifier: viewCons[indexPath.row]) {
             let i = viewCons[indexPath.row]
