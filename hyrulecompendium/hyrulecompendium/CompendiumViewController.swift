@@ -12,8 +12,10 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
     let schemas: [String] = ["Monsters", "Creatures", "Equipment", "Materials", "Treasure"]
     let images: [String] = ["monster", "horse", "sword", "pear", "treasure-chest"]
     let viewCons: [String] = ["MonsterViewController", "CreaturesViewController", "EquipmentViewController", "MaterialsViewController", "TreasureViewController"]
+    var datal: [String]?
     
-    // maybe when the compendium loads we fetch immediately... so we don't have to wait for nothing when shit happens
+    // i think we need to make a variable that holds our fetching data so we don't need to fetch so much
+    
     @IBOutlet weak var compTableView: UITableView!
     
     @IBOutlet weak var label: UILabel!
@@ -28,6 +30,9 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
         title = "Compendium"
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120.0
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return schemas.count
     }
@@ -62,6 +67,8 @@ class CompendiumViewController: UIViewController, UITableViewDelegate, UITableVi
             navigationController?.pushViewController(vc, animated: true)
         }
     }
+    
+    
     
     // take in vc variable that's empty and load the preliminary cells with information before the vc gets pushed
     func loadVC() {

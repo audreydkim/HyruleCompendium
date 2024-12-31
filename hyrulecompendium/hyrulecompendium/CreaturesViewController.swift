@@ -7,16 +7,19 @@
 
 import UIKit
 
+var compendiumData : [String:[Any]] = ["Monsters": [], "Creatures": [], "Equipment": [], "Materials": [], "Treasure": []]
+
 class CreaturesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
 
     @IBOutlet weak var label: UILabel!
 
     @IBOutlet weak var creatureTableView: UITableView!
-    var creaturesData: HandleData<Creature>! // when i make this i get "no initializer error"
+    var creaturesData: HandleData<Creature>! //
     let url = URL(string: "https://botw-compendium.herokuapp.com/api/v3/compendium/category/creatures")
     var datal: [Creature2] = []
-    var imageCache: [String: UIImage] = [:]
+    var imageCache: [String: UIImage] = [:] // UIImage can be found if using url string of image from api
+                                            // datal[i].image = url string to image
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,19 +29,26 @@ class CreaturesViewController: UIViewController, UITableViewDataSource, UITableV
         creatureTableView.delegate = self
         title = "Creatures"
 
-        fetch() { [weak self] result in
-            // switch statement is condition used to compare (result) to case values
-            switch result {
-            case .success(let data):
-                NSLog("success <3")
-                self?.datal = data
-                // proceed to do whatever you want with your read data (datal) ------------------------------------------
-                DispatchQueue.main.async {
-                    self?.creatureTableView.reloadData()
+        if compendiumData["Creatures"]!.isEmpty {
+            NSLog("compendiumData is empty")
+            fetch() { [weak self] result in
+                // switch statement is conditional used to compare (\result) to case values
+                switch result {
+                case .success(let data):
+                    NSLog("success <3")
+                    self?.datal = data
+                    compendiumData["Creatures"] = data
+                    // proceed to do whatever you want with your read data (datal) ------------------------------------------
+                    DispatchQueue.main.async {
+                        self?.creatureTableView.reloadData()
+                    }
+                case .failure(let error):
+                    NSLog("error: \(error)")
                 }
-            case .failure(let error):
-                NSLog("error: \(error)")
             }
+        } else {
+            NSLog("compendiumData is not empty")
+            self.datal = compendiumData["Creatures"] as! [Creature2]
         }
     }
     
@@ -117,17 +127,28 @@ class CreaturesViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let name = datal[indexPath.row].name
+        let creature = datal[indexPath.row]
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "CardViewController") as? CardViewController {
+            vc.data = datal[indexPath.row]
+            if let u = imageCache[creature.image] {
+                vc.image = imageCache[creature.image]!
+            } else {
+                NSLog("image not found in cache \(name)")
+            }
+            navigationController?.pushViewController(vc, animated: true) // this allows our view to change to our view controller for the quiz we clicked on
+        }
         NSLog("Selected cell \(datal[indexPath.row].name)")
     }
-    
 }
 
-// custom error codes to give us more information on what went wrong
-enum FetchError: Error {
-    case statusCode(String)
-    case invalidResponse
-    case noData
-}
+//// custom error codes to give us more information on what went wrong
+//enum FetchError: Error {
+//    case statusCode(String)
+//    case invalidResponse
+//    case noData
+//    case invalidURL
+//}
 
 struct Creature2: Decodable {
     let name: String
@@ -142,7 +163,8 @@ struct Creature2: Decodable {
     let dlc: Bool
 }
 
-struct Big: Decodable {
+
+struct Big: Decodable { // A structure to help us decode in the proper data form
     let data: [Creature2]
 }
 

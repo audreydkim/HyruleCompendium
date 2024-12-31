@@ -27,45 +27,59 @@ extension UIImageView {
 }
 
 class MonsterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+        
     @IBOutlet weak var monsterTableView: UITableView!
     
-    var monstersData: HandleData<Monster>!
+    var monsters: ProcessData<Monster>!
+    var datal: [Monster] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let nib = UINib(nibName: "CreatureCell", bundle: nil)
+        monsters = ProcessData<Monster>("https://botw-compendium.herokuapp.com/api/v3/compendium/category/monsters") // creating our object
+        monsters.startDataProcessing()
         
-        monstersData = HandleData<Monster>("https://botw-compendium.herokuapp.com/api/v3/compendium/category/monsters?game=1")
-        monstersData.fetch { [weak self] in
-            DispatchQueue.main.async {
-                self?.monsterTableView.reloadData()
-            }
-        }
-        
+        datal = monsters.Pdata
+        NSLog("datal: \(datal)")
         monsterTableView.dataSource = self
         monsterTableView.delegate = self
         title = "Monsters"
+        
+        DispatchQueue.main.async {
+            self.monsterTableView.reloadData()
+            NSLog("monster view controller data: \(self.datal)")
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let count = monstersData.data.count
-        NSLog("Number of rows in section: \(count)")
-        return count
+        return datal.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        NSLog("Configuring cell for row at index: \(indexPath.row)")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "monsterCell", for: indexPath) as! TableViewCell
-        let monster = monstersData.data[indexPath.row]
-        cell.monsterNameLabel.text = monster.name
-        
-        //
-        if let imageUrl = URL(string: monster.image) {
-            cell.monsterImage.loadImage(from: imageUrl)
-        } else {
-            NSLog("Invalid URL string: \(monster.image)")
-        }
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: CreatureCell.identifier, for: indexPath) as! CreatureCell
+        let creatureData = datal[indexPath.row]
+        // inputing data into cells here
+        cell.name.text = creatureData.name.uppercased()
+        cell.selectionStyle = .default
+        // check if we already have the url in our imageCache object
+//        if let image = imageCache[creatureData.image] {
+//            cell.icon.image = image
+//        } else {
+//            // proceed to download the image if we do not have the image already saved
+//            ImageDownloader.downloadImage(creatureData.image) { [weak self]
+//                  image, urlString in
+//                if let imageObject = image {
+//                    // performing UI operation on main thread
+//                    DispatchQueue.main.async {
+//                        cell.icon.image = imageObject
+//                        self?.imageCache[urlString!] = imageObject
+//                    }
+//                } else {
+//                    NSLog("Image returned nil")
+//                }
+//            }
+//        }
         return cell
     }
     
