@@ -37,18 +37,24 @@ class MonsterViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         let nib = UINib(nibName: "CreatureCell", bundle: nil)
         monsters = ProcessData<Monster>("https://botw-compendium.herokuapp.com/api/v3/compendium/category/monsters") // creating our object
-        monsters.startDataProcessing()
         
-        datal = monsters.Pdata
-        NSLog("datal: \(datal)")
+        monsters.startDataProcessing { [weak self] in
+            self?.datal = self?.monsters.Pdata ?? []
+            NSLog("money: \(self!.datal)")
+            DispatchQueue.main.async {
+                self?.monsterTableView.reloadData()
+            }
+        }
+        NSLog("datal: \(self.datal)")
+        monsterTableView.register(nib, forCellReuseIdentifier: CreatureCell.identifier)
         monsterTableView.dataSource = self
         monsterTableView.delegate = self
         title = "Monsters"
         
-        DispatchQueue.main.async {
-            self.monsterTableView.reloadData()
-            NSLog("monster view controller data: \(self.datal)")
-        }
+//        DispatchQueue.main.async {
+//            self.monsterTableView.reloadData()
+//            NSLog("monster view controller data: \(self.datal)")
+//        }
         
     }
     

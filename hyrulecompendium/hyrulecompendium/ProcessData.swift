@@ -25,7 +25,7 @@ class ProcessData<D: Codable> {
         self.urlString = url
     }
     
-    func startDataProcessing() {
+    func startDataProcessing(completion: @escaping () -> Void) {
         
         // check if url is valid
         
@@ -37,6 +37,7 @@ class ProcessData<D: Codable> {
                 NSLog("success <3")
                 self?.Pdata = data
                 NSLog("processing data: \(self?.Pdata)")
+                completion()
                 //compendiumData["Creatures"] = data
                 // proceed to do whatever you want with your read data (datal) ------------------------------------------
                 //DispatchQueue.main.async {
