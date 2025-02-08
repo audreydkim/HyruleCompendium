@@ -40,7 +40,7 @@ class CardViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+
     /*
     // MARK: - Navigation
 
@@ -50,4 +50,5 @@ class CardViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 }
