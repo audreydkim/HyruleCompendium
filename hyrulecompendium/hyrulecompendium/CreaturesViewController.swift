@@ -8,6 +8,8 @@
 import UIKit
 
 var compendiumData : [String:[Any]] = ["Monsters": [], "Creatures": [], "Equipment": [], "Materials": [], "Treasure": []]
+var compendiumImages : [String:[Any]] = ["Monsters": [], "Creatures": [], "Equipment": [], "Materials": [], "Treasure": []]
+var imageCache: [String: UIImage] = [:]
 
 class CreaturesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -18,7 +20,7 @@ class CreaturesViewController: UIViewController, UITableViewDataSource, UITableV
     var creaturesData: HandleData<Creature>! //
     let url = URL(string: "https://botw-compendium.herokuapp.com/api/v3/compendium/category/creatures")
     var datal: [Creature2] = []
-    var imageCache: [String: UIImage] = [:] // UIImage can be found if using url string of image from api
+    /*var imageCache: [String: UIImage] = [:]*/ // UIImage can be found if using url string of image from api
                                             // datal[i].image = url string to image
     
     override func viewDidLoad() {
@@ -35,7 +37,7 @@ class CreaturesViewController: UIViewController, UITableViewDataSource, UITableV
                 // switch statement is conditional used to compare (\result) to case values
                 switch result {
                 case .success(let data):
-                    NSLog("success <3")
+                    NSLog("successful fetch <3")
                     self?.datal = data
                     compendiumData["Creatures"] = data
                     // proceed to do whatever you want with your read data (datal) ------------------------------------------
@@ -43,7 +45,7 @@ class CreaturesViewController: UIViewController, UITableViewDataSource, UITableV
                         self?.creatureTableView.reloadData()
                     }
                 case .failure(let error):
-                    NSLog("error: \(error)")
+                    NSLog("unsuccessful fetch </3 error: \(error)")
                 }
             }
         } else {
@@ -78,8 +80,8 @@ class CreaturesViewController: UIViewController, UITableViewDataSource, UITableV
                 if string.isEmpty {
                     completion(.failure(FetchError.noData))
                 } else {
-                    NSLog("successful fetch")
-                    NSLog("returned data: \(string)")
+                    // SUCCESS CASE
+                    // NSLog("returned data: \(string)")
                     do {
                         let object = try JSONDecoder().decode(Big.self, from: data)
                         // return decoded data to completion success handler
@@ -104,6 +106,8 @@ class CreaturesViewController: UIViewController, UITableViewDataSource, UITableV
         // inputing data into cells here
         cell.name.text = creatureData.name.uppercased()
         cell.selectionStyle = .default
+        let downloader = ImageDownloader()
+        
         // check if we already have the url in our imageCache object
         if let image = imageCache[creatureData.image] {
             cell.icon.image = image
@@ -115,12 +119,16 @@ class CreaturesViewController: UIViewController, UITableViewDataSource, UITableV
                     // performing UI operation on main thread
                     DispatchQueue.main.async {
                         cell.icon.image = imageObject
-                        self?.imageCache[urlString!] = imageObject
+                        imageCache[urlString!] = imageObject
                     }
                 } else {
                     NSLog("Image returned nil")
                 }
             }
+        }
+        
+        if downloader.imageCacheCheck(creatureData.image) {
+            
         }
         return cell
     }
@@ -169,6 +177,16 @@ struct Big: Decodable { // A structure to help us decode in the proper data form
 }
 
 class ImageDownloader {
+    
+    // maybe create another function that returns true or false if we have the image already in our global variable imageCache
+    public func imageCacheCheck(_ urlString: String) -> Bool {
+        if (imageCache[urlString] == nil) {
+            return false
+        } else {
+            return true
+        }
+    }
+    
     static func downloadImage(_ urlString: String, completion: ((_ image: UIImage?, _ urlString: String?) -> ())?) {
         
        guard let url = URL(string: urlString) else {

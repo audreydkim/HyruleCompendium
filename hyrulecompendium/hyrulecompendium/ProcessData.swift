@@ -34,9 +34,9 @@ class ProcessData<D: Codable> {
             // switch statement is conditional used to compare (\result) to case values
             switch result {
             case .success(let data):
-                NSLog("success <3")
+                NSLog("successful fetch <3")
                 self?.Pdata = data
-                NSLog("processing data: \(self?.Pdata)")
+                //NSLog("processing data: \(self?.Pdata)")
                 completion()
                 //compendiumData["Creatures"] = data
                 // proceed to do whatever you want with your read data (datal) ------------------------------------------
@@ -44,7 +44,7 @@ class ProcessData<D: Codable> {
                     //self?.creatureTableView.reloadData()
                 //}
             case .failure(let error):
-                NSLog("error: \(error)")
+                NSLog("unsuccessful fetch </3 error: \(error)")
             }
         }
     }
@@ -88,12 +88,11 @@ class ProcessData<D: Codable> {
                 if string.isEmpty {
                     completion(.failure(FetchError.noData))
                 } else {
-                    NSLog("successful fetch")
-                    NSLog("returned data: \(string)")
+                    //NSLog("returned data: \(string)")
                     do {
                         let object = try JSONDecoder().decode(Answer.self, from: data)
                         // return decoded data to completion success handler
-                        NSLog("\(object.data)")
+                        //NSLog("\(object.data)")
                         completion(.success(object.data))
                     } catch let decoderError {
                         // return decoderError to completion failure handler

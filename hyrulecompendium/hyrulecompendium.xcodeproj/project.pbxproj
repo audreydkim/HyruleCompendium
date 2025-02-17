@@ -20,6 +20,8 @@
 		1FF95C4D2C0725B40071DCC6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF95C4C2C0725B40071DCC6 /* TableViewCell.swift */; };
 		764073562C44C7C00069AD1E /* CreatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764073552C44C7C00069AD1E /* CreatureCell.xib */; };
 		764073572C44C7C00069AD1E /* CreatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764073542C44C7C00069AD1E /* CreatureCell.swift */; };
+		7680EEA12D5743A0004ED8EF /* MonsterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7680EEA02D5743A0004ED8EF /* MonsterCell.xib */; };
+		7680EEA22D5743A0004ED8EF /* MonsterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7680EE9F2D5743A0004ED8EF /* MonsterCell.swift */; };
 		76B1E10E2CABDB36009F66E6 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B1E10D2CABDB36009F66E6 /* CardViewController.swift */; };
 		76BA59BF2C23DB9200002891 /* CompendiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA59BE2C23DB9200002891 /* CompendiumViewController.swift */; };
 		76BA59C12C23DB9D00002891 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA59C02C23DB9D00002891 /* TodoViewController.swift */; };
@@ -68,6 +70,8 @@
 		1FF95C4C2C0725B40071DCC6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		764073542C44C7C00069AD1E /* CreatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureCell.swift; sourceTree = "<group>"; };
 		764073552C44C7C00069AD1E /* CreatureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatureCell.xib; sourceTree = "<group>"; };
+		7680EE9F2D5743A0004ED8EF /* MonsterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterCell.swift; sourceTree = "<group>"; };
+		7680EEA02D5743A0004ED8EF /* MonsterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonsterCell.xib; sourceTree = "<group>"; };
 		76B1E10D2CABDB36009F66E6 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		76BA59BE2C23DB9200002891 /* CompendiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompendiumViewController.swift; sourceTree = "<group>"; };
 		76BA59C02C23DB9D00002891 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				764073552C44C7C00069AD1E /* CreatureCell.xib */,
 				76B1E10D2CABDB36009F66E6 /* CardViewController.swift */,
 				76EAE7462D0152B60071FE0B /* ProcessData.swift */,
+				7680EE9F2D5743A0004ED8EF /* MonsterCell.swift */,
+				7680EEA02D5743A0004ED8EF /* MonsterCell.xib */,
 			);
 			path = hyrulecompendium;
 			sourceTree = "<group>";
@@ -276,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7680EEA12D5743A0004ED8EF /* MonsterCell.xib in Resources */,
 				76BA59C62C23F02C00002891 /* SchemaTableViewCell.xib in Resources */,
 				1FF516BE2C06B919007F0762 /* Assets.xcassets in Resources */,
 				1FF516C12C06B919007F0762 /* Base in Resources */,
@@ -316,6 +323,7 @@
 				76C64B2D2C2BAF25002F354F /* MaterialsViewController.swift in Sources */,
 				76B1E10E2CABDB36009F66E6 /* CardViewController.swift in Sources */,
 				76C64B272C2A5DE4002F354F /* TreasureViewController.swift in Sources */,
+				7680EEA22D5743A0004ED8EF /* MonsterCell.swift in Sources */,
 				76BA59C32C23DBA700002891 /* DiaryViewController.swift in Sources */,
 				76C64B292C2BADFE002F354F /* EquipmentViewController.swift in Sources */,
 				1FF516B52C06B918007F0762 /* AppDelegate.swift in Sources */,
